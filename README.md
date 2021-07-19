@@ -14,17 +14,26 @@ then create a super user using this command (python manage.py createsuperuser) i
 Then run (python manage.py makemigrations) and then run(python manage.py migrate) to migrate the db
 Now navigate to our todo app and create a model(data structure of todo)
    -create a class Todo which will have 3 fields, title, description bool completed
+   ![](models.png)
 
 Now that we have our models we need to create a serializer this will take our model data and convert it into json
 create a new file serializers.py in our todo app and create the serializer as below
+![](serializer.png)
 
 lets go into our views.py now and create our view sets we are going to create only one view that will handle everything for us. Create as shown below
+![](views.png)
+
 create a file urls.py in the todo app and implement as below
+![](urls(todo).png)
 
 under api directory select urls.py and add the following lines as below
+![](urls(api).png)
+
 Navigate to the admin.py and register the app as follows
+![](admin.png)
 
 in the settings.py create your postgres database credentials after you have created the database in postgres
+![](settings.png)
 
 Save and start server with the following command(python manage.py runserver)
 
